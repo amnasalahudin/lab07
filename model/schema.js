@@ -1,13 +1,10 @@
-import mongoose from 'mongoose';
-const { Schema } = mongoose;
+import mongoose from "mongoose";
 
-const nameSchema = new Schema({
-  name:  {String, // String is shorthand for {type: String}
-  required: true
-},
- 
-});
-
-var userModel = mongoose.model('User', nameSchema);
-module.exports = userModel;
-
+const nameSchema = new mongoose.Schema({
+    name:{
+        type:String,
+        
+    },
+})
+var userModel = mongoose.model("nameSchema", nameSchema);
+export default userModel;
